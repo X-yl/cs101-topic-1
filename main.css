@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+  padding-top: 80px;
+}
+
+.title {
+  font-family: "DM Serif Display", sans-serif;
+  font-style: italic;
+  font-size: 3.5em;
+  line-height: 1.7;
+  scroll-margin-top: 200px;
+}
+
+.header-image {
+  max-height: 75px;
+  object-fit: cover;
+}
+
+.article-info {
+  gap: 10px;
+  flex-wrap: wrap;
+  font-family: 'Libre Baskerville', Georgia, 'Times New Roman', Times, serif;
+  color: #666;
+}
+
+.article-body {
+  font-family: 'Libre Baskerville';
+  text-align: justify;
+  color: #333;
+}
+
+/*Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+  .article-body {
+    max-width: 800px;
+  }
+  .article-info-container {
+    border-left: 1px solid #ddd;
+  }
+}
+
+#nav-status-item {
+  font-family: 'Libre Baskerville';
+  color: #777;
+  transition: opacity 150ms;
+  opacity: 0;
+}
+
+.navbar-brand {
+  font-family: 'DM Serif Display';
+}
+
+h4 {
+  font-family: 'Montserrat';
+}
+
+h2 {
+  font-family: "DM Serif Display", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.bi {
+  vertical-align: -.125em;
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+.nav-flush .nav-link {
+  border-radius: 0;
+}
+
+.btn-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: .25rem .5rem;
+  color: rgba(0, 0, 0, .65);
+  background-color: transparent;
+  border: 0;
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+}
+
+.btn-toggle-dark {
+  filter: invert(100%);
+}
+
+.btn-toggle[aria-expanded="true"] {
+  color: rgba(0, 0, 0, .85);
+}
+
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  display: inline-flex;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+  text-decoration: none;
+}
+
+aside>nav {
+  position: sticky;
+  top: 100px;
+}
+
+.article-heading {
+  scroll-margin-top: 80px;
+}
+
+.progress {
+  height: 3px;
+  border: none;
+  background-color: #666;
+  color: blue;
+  width: 80%;
+}
+
+progress::-moz-progress-bar {
+  background: blue;
+}
+
+progress::-webkit-progress-value {
+  background: blue;
+}
