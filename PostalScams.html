@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<style>
+ .right{
+  float: right;
+ }
+
+ p{
+   font: size 12px;
+   font-family: arial;
+ }
+</style>
+  <link rel="stylesheet" href="main.css">
+
+  <title>COVID-19 & Digital Safety</title>
+
+</head>
+
+<body>
+  <script src="main.js"></script>
+
+  <nav class="container shadow navbar navbar-dark bg-dark navbar-expand-lg fixed-top ">
+    <a href="#" class="navbar-brand d-flex align-items-center" style="gap: 10px">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#fff">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
+      </svg>
+      CS101
+    </a>
+    <div id="nav-status-item" class="secondary ms-sm-4 d-none d-sm-block">
+      Postal scams
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"><span
+        class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="nav-menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#article">Article</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Site information</a></li>
+        <li class="nav-item"><a class="nav-link" href="#report">Web compliance report</a></li>
+      </ul>
+      <ul class="d-lg-none navbar-nav text-light list-unstyled ps-0 border-top mt-3 pt-3">
+        <li class="mb-1">
+          <a href="#" class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#home-collapse" aria-expanded="false">
+            Table of contents
+          </a>
+          <div class="collapse" id="home-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal small">
+              <li><a href="#privacy" class="link-light rounded">Privacy</a></li>
+              <li><a href="#investment-scams" class="link-light rounded">Investment scams</a></li>
+              <li><a href="#disinfo" class="link-light rounded">Disinformation</a></li>
+              <li><a href="#phishing" class="link-light rounded">Phishing</a></li>
+              <li><a href="#delivery-scams" class="link-light rounded">Delivery scams</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#about-collapse" aria-expanded="false">
+            About
+          </a>
+
+          <div class="collapse show" id="about-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#cool-tips" class="link-light rounded">Cool tips</a></li>
+              <li><a href="#resources-used" class="link-light rounded">Resources used</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#compliance-collapse" aria-expanded="false">
+            Compliance report
+          </a>
+
+          <div class="collapse show" id="compliance-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#cross-browser" class="link-light rounded">Cross browser compatibility</a></li>
+              <li><a href="#hyperlinks" class="link-light rounded">Hyperlinks</a></li>
+              <li><a href="#validity" class="link-light rounded">HTML/CSS Validity</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container border shadow">
+      <div class="row">
+        <div class="col-lg-9 p-5">
+          <h1 class="title" id="article">The Impact of COVID-19 on <u><span class="text-nowrap"
+                style="background-image: url('assets/highlighter.png'); background-repeat: no-repeat; padding: 15px;">
+                postal scam</span></u></h1>
+        </div>
+        <div class="col-lg-auto d-flex align-items-center secondary article-info-container px-5 pb-5">
+          <div>
+            <div class="article-info d-flex align-items-center p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1h4s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+              </svg> Charlie McMichael
+            </div>
+            <div class="article-info d-flex align-items-center p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-calendar-event" viewBox="0 0 16 16">
+                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                <path
+                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+              </svg> October 20, 2021
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <img src="assets/coronavirus.webp" alt="covid-19 splash image" class="header-image p-0">
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row" style="justify-content: space-around;">
+        <div class="col-lg-9">
+          <article id="article-text" class="article-body border p-5 shadow">
+            <h4>What are postal scams</h4>
+            <p>
+              A huge wave of postal scams swept the UK during the lockdown hoping to prey on unsuspecting people during a time of vulnerability for everyone. The huge increase in online shopping due to the lockdown drew the attention of many scammers, with asurvey performedby (Lauren Merryweather: https://www.which.co.uk/news/2021/06/three-in-five-people-have-received-a-scam-delivery-text-in-the-last-year/ - Which?, 2021) in June 2021 Saying that 61% of just over two thousand people had received a fake text from a delivery company. These often-contained messages telling the victim that a parcel was held up in customs, redirected, or that a parcel couldn’t be delivered ext. Then demanding a small fee to receive it. The messages would often link to fake websites of companies like Royal Mail, DPD and Hermes, where the victim would be encouraged to input their bank details for payment. Though that doesn’t mean you shouldn’t be warry of ones that don’t even mention a fee in the message. Here are some examples. (Images will be here on website)
+            </p>
+            <img src="postal.png" alt="" width = 40%;> 
+           
+            <img class = "right" src="Screenshot_20211018-193908__02.png" alt="" width = 40%; >
+            
+            
+            <a class="article-heading" id="privacy"></a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>
+              “In November alone, the Suspicious Email Reporting Service (SERS), a tool launched by the National Cyber Security Centre (NCSC) and the City of London Police earlier this year, received 5,478 reports of suspicious DPD emails. This is an increase of 655% when compared to the previous month.” - (“Fake DPD messages lead to over £200,000 in losses since June,” n.d.) </p>
+           
+           
+
+           
+          </article>
+
+          <div id="site-info" class="article-body border p-5 shadow mt-5">
+            <h2 id="about" class="article-heading">How to spot them:</h2>
+            <p class="mt-4">
+              the quality of a scam can vary but most of them have something that just seems out of place, a few easy things you can do to check if something like this is a scam is look at the domain name the bit after http:// does it look normal using the above image as a example do you have a local post office called “parcel-worldwide” no?, unfortunately this isn’t full proof; as smart scammers can clone the official websites and URL’s. With the best way to go about it just being simply never click on the links.
+              Another basic thing to look out for is spelling and grammatical errors, or if the message mentions were the parcel has come from for instance royal mail will include the name of the retailer where you bought the item from in their messages.
+              
+            </p>
+           
+
+
+          
+          </div>
+
+          <div id="compliance-report" class="article-body border p-5 shadow mt-5">
+            <h2 id="report">What you can do:</h2>
+            
+            <p>
+              If you think you have received a scam over text you can help by reporting it to your network operator by forwarding the messaging to 7726 or directly to the delivery company. Go directly to the website of the company that’s delivering your parcel don’t use the links, you can use the tracking feature to see where the parcel currently is and if there is no mention of any sort of pending payment or anything like that ignore the message, remember you can always call up the postal service to double check.
+If you have fallen victim to one of these scams or any at all contact your bank. There your only way of getting the money back and is the only way to prevent the scammers from taking out even more.
+Alternately if you sent the money through PayPal, they have their own separate reimbursement scheme that you might qualify for. You can still go through the bank to handle scam and fraud even if you paid through a 3rd party like PayPal. 
+
+              </p>
+              <h4 id="resources-used" class="article-heading">Offical webages</h4>
+              <div>
+                <ul>
+                  <li><a href="https://www.royalmail.com/help/scam-protection?iid=HP_M2_4_SCAMS">Royal Mail</a></li>
+                  <li><a href="https://www.dpd.co.uk/content/about_dpd/phishing.jsp">DPD</a>
+                  </li>
+                  <li><a href="https://www.myhermes.co.uk/help-and-support/cyber-security">Hermes</a></li>
+                  <li><a href="https://www.ups.com/us/en/help-center/legal-terms-conditions/fight-fraud/recognize.page">UPS</a></li>
+                  </li>
+                </ul>
+              </div>            
+           
+          </div>
+        </div>
+
+        <aside class="col-lg-3 d-none d-lg-block">
+          <nav class="navbar border shadow p-3" style="position: sticky;">
+            <ul class="navbar-nav list-unstyled" style="width: 100%;">
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#home-collapse-side" aria-expanded="true">
+                  Article
+                </button>
+                <progress max="100" value="0" id="article-progress" class="mx-auto progress"></progress>
+
+
+                <div class="collapse show" id="home-collapse-side">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#privacy" class="link-dark rounded">Privacy</a></li>
+                    <li><a href="#investment-scams" class="link-dark rounded">Investment scams</a></li>
+                    <li><a href="#disinfo" class="link-dark rounded">Disinformation</a></li>
+                    <li><a href="#phishing" class="link-dark rounded">Phishing</a></li>
+                    <li><a href="#delivery-scams" class="link-dark rounded">Delivery scams</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#about-collapse-side" aria-expanded="true">
+                  About
+                </button>
+                <progress max="100" value="0" id="about-progress" class="mx-auto progress"></progress>
+
+                <div class="collapse show" id="about-collapse-side">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#cool-tips" class="link-dark rounded">Cool tips</a></li>
+                    <li><a href="#resources-used" class="link-dark rounded">Resources used</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#compliance-collapse-side" aria-expanded="true">
+                  Web compliance
+                </button>
+                <progress max="100" value="0" id="compliance-progress" class="mx-auto progress"></progress>
+
+                <div class="collapse show" id="compliance-collapse-side">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#cross-browser" class="link-dark rounded">Cross browser compatibility</a></li>
+                    <li><a href="#hyperlinks" class="link-dark rounded">Hyperlinks</a></li>
+                    <li><a href="#validity" class="link-dark rounded">HTML/CSS validity</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="container mt-5">
+    <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+      <p>
+        <span class="text-muted">&copy; 2021 Charlie McMichael. Created for CS101.</span>
+      </p>
+
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
