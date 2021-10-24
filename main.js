@@ -30,32 +30,5 @@ window.onscroll = () => {
 
             document.querySelector("#article-progress").value = progressPercentage;
         })();
-
-        (() => {
-            let coords = document.querySelector("#site-info").getBoundingClientRect();
-            let height = coords.height;
-            let progressPercentage = 0;
-
-            if (coords.top < 0) {
-                const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
-                progressPercentage = clamp((Math.abs(coords.top) / height) * 100, 0, 100);
-            }
-
-            document.querySelector("#about-progress").value = progressPercentage;
-        })();
-
-
-        (() => {
-            let coords = document.querySelector("#compliance-report").getBoundingClientRect();
-            let height = coords.height;
-            let progressPercentage = 0;
-
-            if (coords.top < 0) {
-                const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
-                progressPercentage = clamp((Math.abs(coords.top) / height) * 100, 0, 100);
-            }
-
-            document.querySelector("#compliance-progress").value = progressPercentage;
-        })();
     }
 };
