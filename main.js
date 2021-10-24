@@ -29,6 +29,6 @@ window.onscroll = () => {
             }
 
             document.querySelector("#article-progress").value = progressPercentage;
-        })();
+        })();   
     }
 };
