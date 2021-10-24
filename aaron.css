@@ -1,0 +1,12 @@
+.header-image {
+    background-position: 0px 150px;
+    filter: hue-rotate(-90deg);
+}
+
+
+.span-highlight {
+    background-image: url('assets/highlighter.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: hue-rotate(-90deg);
+  }

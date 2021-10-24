@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="aaron.css">
+  <title>COVID-19 & Digital Safety</title>
+
+</head>
+
+<body>
+  <script src="main.js"></script>
+
+  <nav class="container shadow navbar navbar-dark bg-dark navbar-expand-lg fixed-top ">
+    <a href="#" class="navbar-brand d-flex align-items-center" style="gap: 10px">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#fff">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
+      </svg>
+      CS101
+    </a>
+    <div id="nav-status-item" class="secondary ms-sm-4 d-none d-sm-block">
+      Impact of COVID-19 on Privacy
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"><span
+        class="navbar-toggler-icon"></span></button>
+
+    <div class="collapse navbar-collapse" id="nav-menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/">Home </a></li>
+        <li class="nav-item"><a class="nav-link" href="/biblio.html">Bibliography</a></li>
+      </ul>
+      <ul class="d-lg-none navbar-nav text-light list-unstyled ps-0 border-top mt-3 pt-3">
+        <li class="mb-1">
+          <a href="#" class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#kyle-collapse" aria-expanded="false">
+            Kyle Pereira
+          </a>
+
+          <div class="collapse" id="kyle-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="/contact-tracing.html" class="link-light rounded">Contact Tracing</a></li>
+              <li><a href="/rushed-tech.html" class="link-light rounded">Rushed Adoption</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#charlie-collapse" aria-expanded="false">
+            Charlie McMichael
+          </a>
+
+          <div class="collapse" id="charlie-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="/PostalScams.html" class="link-light rounded">Postal Scams</a></li>
+              <li><a href="/bandwidth.html" class="link-light rounded">Bandwidth</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="mb-1">
+          <a href="#" class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#alastair-collapse" aria-expanded="false">
+            Alastair McNeill
+          </a>
+
+          <div class="collapse" id="alastair-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="/disinfo.html" class="link-light rounded">Disinformation</a></li>
+              <li><a href="/fake-news.html" class="link-light rounded">Fake News</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="mb-1">
+          <a href="#" class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#aaron-collapse" aria-expanded="false">
+            Aaron Mclean
+          </a>
+
+          <div class="collapse" id="aaron-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="/investment-scams.html" class="link-light rounded">Investment Scams</a></li>
+              <li><a href="/crypto-scams.html" class="link-light rounded">Cryptocurrency Scams</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="mb-1">
+          <a href="#" class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#about-collapse" aria-expanded="false">
+            Euan Gilmour
+          </a>
+
+          <div class="collapse" id="about-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="/euan-1.html" class="link-light rounded">Dunno what his</a></li>
+              <li><a href="/euan-2.html" class="link-light rounded">Topics are</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <section>
+    <div class="container border shadow">
+      <div class="row">
+        <div class="col-lg-9 p-5">
+          <h1 class="title">The Impact of COVID-19 on <u>
+		  <span class="span-highlight"
+                style="background-image: url('assets/highlighter.png'); background-repeat: no-repeat; padding: 15px;">Digital
+                Safety</span></u></h1>
+        </div>
+        <div class="col-lg-auto d-flex align-items-center secondary article-info-container px-5 pb-5">
+          <div>
+            <div class="article-info d-flex align-items-center p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1h4s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+              </svg> Aaron Mclean
+            </div>
+            <div class="article-info d-flex align-items-center p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-calendar-event" viewBox="0 0 16 16">
+                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                <path
+                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+              </svg> October 21, 2021
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <img src="assets/coronavirus.webp" alt="covid-19 splash image" class="header-image p-0">
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row" style="justify-content: space-around;">
+        <div class="col-lg-9">
+          <div id="article-text" class="article-body border p-5 shadow">
+			<h2 id="article" class="article-heading">Crypto Scams</h2>
+            <br>
+            <a class="article-heading" id="cScams" ></a>
+            <h4>Types of Crypto Scams</h4>
+            <p>
+              Due to the world’s economy being in a strange place, many people now believe that Crypto is the way forward for investors, with bitcoin rising more than $15000 during the pandemic according to the article by Kamalpour (2020). 
+            </p>
+          <img src="assets/table1XiaEtAll.png" style="max-width: 100%;" alt="Table 1, A TAXONOMY OF 6 KINDS OF COVID-19 CRYPTOCURRENCY SCAMS (Xia et al., 2020).">
+            <p>Table adapted from : Table 1, A TAXONOMY OF 6 KINDS OF COVID-19 CRYPTOCURRENCY SCAMS (Xia et al., 2020). </p>
+			
+			<p>This gives some examples of scams related to crypto currency, these are:</p> 
+            <ul>
+				<li>COVID-19 token scam, which is when a token is created that is claimed to donate to charity, but they are, as the paper so elegantly puts it, ““Pump-and-Dump” schemes”. They make money by convincing people to donate to this charity coin, and once the price is high enough, they cash out.</li>
+				<li>Crypto Malware, which is getting software onto a device, typically through a trojan, to block that device’s function or obtain personal data to “hold hostage” until a ransom of crypto is paid. There are other types of malware such as installing crypto miners onto a device, still via a trojan, and using that device to mine crypto without having to pay for the power as you typically would. The trojan has been disguised as COVID-19 related applications to take advantage of people trying to protect themselves.</li>
+				<li>COVID-19 giveaway scam, which is when a promise to return coins to a user based on how much they put in. These are typically spread via social media and other media sharing platforms by using copycat accounts of famous people or well known crypto investors, such as Bill Gates or Vitalink Buterin, or more rarely by hacking their accounts. The posts promoting these say things like “send bitcoin to 1Gatesk17u25gLEk4JNYMDTg8WkCmLpn4 and get double back” and would typically give a time limit to increase the chance of people making an uneducated, impulse decision.</li>
+            </ul>
+			<p>Kamalpour(2020) Sites some large crytpo related scams that have happened in the past is May 2019, when $40 million worth of Bitcoin wallet passcodes were stolen, and a group from the Netherlands and the United Kingdom created aa fake exchange to gain access to almost $30 million worth of user bitcoin from over 10 countries. I mention these just to show that these scams can be executed with incredible finesse and are a very real risk to anybody involved or thing about getting involved in cryptocurrency trading.</p>
+            
+           </div>
+          
+          <div id="site-info" class="article-body border p-5 shadow mt-5">
+            <h2 id="protection" class="article-heading">How to protect yourself</h2>
+            <p>
+			 So, unfortunately there isn’t a huge amount you can do to protect yourself from these types of scams outside of using a secure password and having two-factor identification on all crypto wallets but the rule “if it sounds too good to be true it probably is” is solid advice. However, there are some government efforts to manage crypto and hopefully reduce scams. Kamalpour(2020) lists some government legislation that various organisations have passed to help protect users online, this legislations is needed as cryptocurrency has only recently grown at such a massive rate and its taking Governments a bit of time to catch up. One of these is:
+            <br><br>
+			The FCA (Financial Conduct Authority) announced in October of 2020 that they were implementing a system to try and minimize damage caused by cryptocurrency scams on to retail consumers. This regulation aimed to minimize the damage without restricting people’s ability to use cryptocurrency. Many people have got misconceptions about this regulation as the rules are poorly understood but the aim is to target unregulated crypto assets to protect those less experienced with crypto.
+           </p>
+            
+          </div>
+	
+       
+        </div>
+
+<aside class="col-lg-3 d-none d-lg-block">
+          <nav class="navbar border shadow p-3" style="position: sticky;">
+            <ul class="navbar-nav list-unstyled" style="width: 100%;">
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#home-collapse-side" aria-expanded="true">
+                  Article
+                </button>
+                <progress max="100" value="0" id="article-progress" class="mx-auto progress"></progress>
+              </li>
+
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#kyle-collapse-side" aria-expanded="true">
+                  Kyle Pereira
+                </button>
+
+                <div class="collapse show" id="kyle-collapse-side">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="/contact-tracing.html" class="link-dark rounded">Contact Tracing</a></li>
+                    <li><a href="/rushed-tech.html" class="link-dark rounded">Rushed Adoption</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#charlie-collapse-side" aria-expanded="true">
+                  Charlie McMichael
+                </button>
+
+                <div class="collapse show" id="charlie-collapse-side">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="/PostalScams.html" class="link-dark rounded">Postal Scams</a></li>
+                    <li><a href="/bandwidth.html" class="link-dark rounded">Bandwidth</a></li>
+                  </ul>
+                </div>
+              </li>
+              
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#alastair-collapse-side" aria-expanded="true">
+                  Alastair McNeill
+                </button>
+
+                <div class="collapse show" id="alastair-collapse-side">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="/disinfo.html" class="link-dark rounded">Disinformation</a></li>
+                    <li><a href="/fake-news.html" class="link-dark rounded">Fake News</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#aaron-collapse-side" aria-expanded="true">
+                  Aaron Mclean
+                </button>
+
+                <div class="collapse show" id="aaron-collapse-side">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="/investment-scams.html" class="link-dark rounded">Investment Scams</a></li>
+                    <li><a href="/crypto-scams.html" class="link-dark rounded">Cryptocurrency Scams</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#euan-collapse-side" aria-expanded="true">
+                  Euan Gilmour
+                </button>
+
+                <div class="collapse show" id="euan-collapse-side">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="/euan-1.html" class="link-dark rounded">Dunno what his</a></li>
+                    <li><a href="/euan-2.html" class="link-dark rounded">Topics are</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="container mt-5">
+    <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+      <p>
+        <span class="text-muted">&copy; 2021 Kyle Pereira. Created for CS101.</span>
+      </p>
+
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
