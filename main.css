@@ -154,3 +154,14 @@ progress::-moz-progress-bar {
 progress::-webkit-progress-value {
   background: blue;
 }
+
+.csl-entry {
+  scroll-margin-top: 80px;
+  padding: 5px;
+  padding-left: 20px;
+  text-indent: -15px;
+}
+
+.csl-entry:target {
+  background-color: #ffa;
+}

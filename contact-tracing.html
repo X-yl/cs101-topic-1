@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -12,8 +11,9 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="kyle.css">
 
-  <title>COVID-19 & Digital Safety</title>
+  <title>COVID-19 & Privacy</title>
 
 </head>
 
@@ -29,24 +29,22 @@
       CS101
     </a>
     <div id="nav-status-item" class="secondary ms-sm-4 d-none d-sm-block">
-      Impact of COVID-19 on Digital Safety
+      Impact of COVID-19 on Privacy
     </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"><span
         class="navbar-toggler-icon"></span></button>
+
     <div class="collapse navbar-collapse" id="nav-menu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="biblio.html">Bibliography</a></li>
       </ul>
-
       <ul class="d-lg-none navbar-nav text-light list-unstyled ps-0 border-top mt-3 pt-3">
-        
-
         <li class="mb-1">
-          <button class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
-            data-bs-target="#kyle-collapse" aria-expanded="true">
+          <a href="#" class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#kyle-collapse" aria-expanded="false">
             Kyle Pereira
-          </button>
+          </a>
 
           <div class="collapse" id="kyle-collapse">
             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -56,10 +54,10 @@
           </div>
         </li>
         <li class="mb-1">
-          <button class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
-            data-bs-target="#charlie-collapse" aria-expanded="true">
+          <a href="#" class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#charlie-collapse" aria-expanded="false">
             Charlie McMichael
-          </button>
+          </a>
 
           <div class="collapse" id="charlie-collapse">
             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -68,12 +66,12 @@
             </ul>
           </div>
         </li>
-        
+
         <li class="mb-1">
-          <button class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
-            data-bs-target="#alastair-collapse" aria-expanded="true">
+          <a href="#" class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#alastair-collapse" aria-expanded="false">
             Alastair McNeill
-          </button>
+          </a>
 
           <div class="collapse" id="alastair-collapse">
             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -83,44 +81,43 @@
         </li>
 
         <li class="mb-1">
-          <button class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
-            data-bs-target="#aaron-collapse" aria-expanded="true">
+          <a href="#" class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#aaron-collapse" aria-expanded="false">
             Aaron Mclean
-          </button>
+          </a>
 
           <div class="collapse" id="aaron-collapse">
             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
               <li><a href="InvScams.html" class="link-light rounded">Investment Scams</a></li>
-              <li><a href="cryptoScams.html" class="link-light rounded">Cryptocurrency Scams</a></li>
+              <li><a href="cryptopScams.html" class="link-light rounded">Cryptocurrency Scams</a></li>
             </ul>
           </div>
         </li>
 
         <li class="mb-1">
-          <button class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
-            data-bs-target="#euan-collapse" aria-expanded="true">
+          <a href="#" class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#about-collapse" aria-expanded="false">
             Euan Gilmour
-          </button>
+          </a>
 
-          <div class="collapse" id="euan-collapse">
+          <div class="collapse" id="about-collapse">
             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
               <li><a href="phishing.html" class="link-light rounded">Phishing</a></li>
-              
             </ul>
           </div>
         </li>
-      
       </ul>
     </div>
+
   </nav>
 
   <section>
     <div class="container border shadow">
       <div class="row">
         <div class="col-lg-9 p-5">
-          <h1 class="title" id="article">The Impact of COVID-19 on <u><span class="text-nowrap"
-                style="background-image: url('assets/highlighter.png'); background-repeat: no-repeat; padding: 15px;">Digital
-                Safety</span></u></h1>
+          <h1 class="title" id="article">COVID-19 & Privacy: <u>
+              <span class="span-highlight text-nowrap">Contact Tracing</span></u>
+          </h1>
         </div>
         <div class="col-lg-auto d-flex align-items-center secondary article-info-container px-5 pb-5">
           <div>
@@ -129,7 +126,7 @@
                 viewBox="0 0 16 16">
                 <path
                   d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1h4s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
-              </svg> 
+              </svg> Kyle Pereira
             </div>
             <div class="article-info d-flex align-items-center p-1">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -137,7 +134,7 @@
                 <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
                 <path
                   d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-              </svg> October 5, 2021
+              </svg> October 24, 2021
             </div>
           </div>
         </div>
@@ -152,105 +149,53 @@
         <div class="col-lg-9">
           <article id="article-text" class="article-body border p-5 shadow">
             <p>
-              With the outbreak of COVID-19 there has been a sharp rise in digital threats online. Malicious agents are
-              taking
-              advantage of the situation by using the pandemic for their own benefit. There are multiple means they
-              utilise,
-              such
-              as scams, disinformation and phishing. The best way to protect yourself from these attacks is by being
-              informed on
-              what they are and knowing how to avoid them. As a lot of people are now working from home, there are a
-              record
-              number of people using online services such as zoom. When online you must be aware of your data and
-              privacy,
-              services aren’t always secure, and your data could have been involved in a data breach.
-              The areas we will be investigating are as follows:
+              Contact tracing is a very important resource in disease control. It involves identifying possible contacts
+              of infected people and subsequently collecting further information about these contacts.
+              Traditional contact tracing was slow and labour intensive, requiring interviews and manually informing
+              close contacts. The concept of digital contact tracing has existed since at least 2007 <a href="biblio.html#bahri-2007">(Bahri, 2007)</a>, but
+              only
+              received widespread attention during the COVID-19 pandemic.
             </p>
-            <br>
-            <a class="article-heading" id="privacy"></a>
-            <h4> Kyle Pereira – COVID 19 <a href="contact-tracing.html"> Contact tracing</a> & <a href="rushed-tech.html"> Rushed adoption</a></h4>
             <p>
-              As technology evolves to deal with and work around the COVID-19 pandemic, it is ever important to
-              scrutinize their impact on our ever-dwindling privacy.
-              Contact tracing is a prime example of a technology that could be misused in a way which would reduce
-              privacy. RAND Corporation finds that “there is considerable variance across programs” in their privacy
-              analysis which charted 20 criteria across 40 programs in 20 countries.
-              There are concerns that surveillance technology is being rolled out under the guise of COVID-19
-              prevention. In Abu Dhabi, facial scanners meant to detect COVID-19 were deployed at border crossings,
-              malls and other public locations have made data rights groups worried.
-              Rushed adoption of new and existing technologies due to the pandemic is also a concern. One example
-              is Zoom, which experienced a massive boost in popularity over the pandemic but has many privacy
-              concerns. </p>
-            <br>
-            <a class="article-heading" id="investment-scams"></a>
-            <h4>Aaron Mclean – COVID-19 <a href="InvScams.html"> Investment Scams</a> & <a href="cryptoScams.html"> Cryptocurrency Scams</a></h4>
-            <p>
-              As the COVID-19 pandemic has had and still is having great effect on many aspects of our world, not
-              least of which is the economy, which has seen moderate to severe decline in the past year. This has led
-              to a large increase in investment scams. Investment scams are when people, through various methods,
-              exploit people investing their money by either making think they are investing when they are just taking
-              their money, or tricking them into investing into things that benefit the scammer.
-              Investment scams mostly affect those who are less experienced with investing who can’t tell when
-              something is fake or when it’s too good to be true. They can be done via fake websites, social media
-              posts etc.
-              They can be Avoided by making sure websites are secure via padlocks, don’t have spelling mistakes, the
-              contact page is accurate, etc. Also, one of the best ways is common sense, the rule if it’s too good to be
-              true, it probably is, is a good one to follow
+              Many contact tracing apps have been criticised due to their privacy implications. A report published by
+              RAND
+              Corporation ranked COVID-19 apps based on multiple criteria, including transparency, anonymity and data
+              management policies <a href="biblio.html#boudreaux-2020">(Boudreaux et al., 2020)</a>, their report found that while some programs fully satisfied
+              a
+              majority of criteria, such as Australia’s COVIDSafe or the UK’s Privacy Protecting App which fully met
+              16/20
+              criteria, some applications like South Korea’s contact tracing program only fully met four criteria. Even
+              so, some say that South Korea’s use of location data allowed them to avoid lockdowns. <a href="biblio.html#ryan-2020">(Ryan, 2020)</a>
             </p>
-            <br>
-            <a class="article-heading" id="disinfo"></a>
-            <h4>Alastair McNeill – COVID-19 & <a href="disinfo.html"> Disinformation</a></h4>
             <p>
-              Disinformation or “fake news” has a massive effect on our lives, it influences political beliefs, can
-              platform harmful hate speech and lead to a distrust in the media. There can be multiple reasons why
-              people originally share disinformation but it’s usually for political or commercial gain. Someone trying
-              to
-              create a fake narrative will often start promoting fake information by using bots. Once bots start to
-              spread fake information people share the information on social media without thinking – continuing the
-              spread of disinformation like a virus. Disinformation and fake news have existed long before COVID-19
-              however during the pandemic the severity and consequence of the fake news has drastically increased.
-              Fake news surrounding vaccines have had a direct effect on people’s health, such as the four-year-old
-              girl who died from the coronavirus after her anti – vax mother contracted the virus. Conspiracies like
-              anti vax gain their platform from fake news shared on social media, another example of this is the idea
-              that China engineered the corona virus as a bioweapon which had over five million impressions on
-              twitter from fake tweets.
-              There are multiple ways in which you can protect yourself from fake information, a website extension
-              such as health guard can flag websites known to contain false information. You should also keep an eye
-              out on social media for posts which have been flagged by fact checkers to be false and generally be wary
-              about information that you see on social media.</p>
-            <br>
-            <a class="article-heading" id="phishing"></a>
-            <h4>Euan Gilmour - COVID-19 & <a href="phishing.html"> Phishing</a></h4>
+              Two possible methodologies are laid out for a contact tracing program in an article from Mayo Clinic
+              Proceedings, <a href="biblio.html#kapa-2020">(Kapa et al., 2020)</a>. In the more common scenario, a central authority is responsible for
+              aggregating data and communicating with the user. This scenario leaves the user identifiable and does not
+              protect privacy. In scenario 2, the data is de-identified before sending it to the central authority. The
+              central authority then aggregates the anonymous data and publishes it. The user’s device then informs the
+              user if their location data overlaps with any infected paths according to the published data.
+            </p>
+            <div class="d-flex w-100 justify-content-center">
+              <img src="./assets/tracing-scenarios.png" alt="Scenarios for tracing">
+            </div>
             <p>
-              Coronavirus-related email phishing attacks saw a 600% increase in the first quarter of 2020. This kind of
-              attack is particularly lucrative for scammers, as they have a success rate of 30% or higher, and only a
-              small percentage of clicks are required to make financial gain. Thus, millions of emails were sent to
-              victims of seeking to apply for funding relief provided by the government, their employers, banks, etc,
-              often using coronavirus, or COVID-19 in the title to entice people. By referring to case studies of mass
-              phishing over the course of the pandemic, I will analyse both the significant prevalence of this type of
-              attack, and the increased sophistication of the methods used; as well as providing a guide as to how to
-              avoid this type of scam.</p>
-            <br>
-            <a class="article-heading" id="delivery-scams"></a>
-            <h4>
-              Charlie McMichael – COVID 19 <a href="PostalScams.html"> Postal Scams</a> & <a href="bandwidth.html"> Bandwidth</a></h4> 
+              Criticisms have been levelled against protocols like Pan-European Privacy-Preserving Proximity Tracing and
+              BlueTrace for their use of a central server for processing logs (scenario 1 in this example).
+            </p>
             <p>
-              Due to everyone being in lockdown the number of delivers to people’s homes skyrocketed as it
-              was there only means of getting products, this resulted in scammers trying to take advantage of
-              the situation by sending people text messages about delivery issue’s etc. I will be Creating a
-              guide/informative page on what delivery scams are, what are the key indicators of the scam
-              and how to notice them and how to try and prevent getting them/ how to report them. due of
-              all the people having to spend time online for work, school, or entertainment it has caused a
-              massive increase in internet traffic with some providers stating an increase of 60%, this resulted
-              in many people experience bandwidth issues and greatly increased the risk of a successfully
-              DDOS attack. Or resulted in many services having to reduce their overall quality like Netflix. As a
-              individual there isn’t much risk of a DDOS attack but if you’re a small or large business owner
-              you never know when someone might just come after your bandwidth</p>
+              Privacy recommendations for contact tracing apps include <a href="biblio.html#bengio-2020">(Bengio et al., 2020)</a>
+            <ul>
+              <li>Consent from users</li>
+              <li>Anonymisation of data</li>
+              <li>Decentralisation</li>
+            </ul>
+            </p>
+            <p>
+              It is critical to be aware of the technology behind digital contact tracing and advocate for privacy
+              preserving implementations of the technology.
+            </p>
           </article>
-
-        
         </div>
-
         <aside class="col-lg-3 d-none d-lg-block">
           <nav class="navbar border shadow p-3" style="position: sticky;">
             <ul class="navbar-nav list-unstyled" style="width: 100%;">
@@ -339,7 +284,7 @@
   <div class="container mt-5">
     <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
       <p>
-        <span class="text-muted">&copy; Created for CS101.</span>
+        <span class="text-muted">&copy; 2021 Kyle Pereira. Created for CS101.</span>
       </p>
 
     </footer>
@@ -352,6 +297,3 @@
 </body>
 
 </html>
-
-
-
