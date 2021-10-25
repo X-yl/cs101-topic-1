@@ -9,10 +9,19 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<style>
+ .right{
+  float: right;
+ }
 
+ p{
+   font: size 12px;
+   font-family: arial;
+ }
+</style>
   <link rel="stylesheet" href="main.css">
 
-  <title>COVID-19 & disinformation</title>
+  <title>COVID-19 & Digital Safety</title>
 
 </head>
 
@@ -34,53 +43,81 @@
         class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="nav-menu">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#article">Article</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">Site information</a></li>
-        <li class="nav-item"><a class="nav-link" href="#report">Web compliance report</a></li>
+        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#report">Bibliography</a></li>
       </ul>
       <ul class="d-lg-none navbar-nav text-light list-unstyled ps-0 border-top mt-3 pt-3">
-        <li class="mb-1">
-          <a href="#" class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
-            data-bs-target="#home-collapse" aria-expanded="false">
-            Table of contents
-          </a>
-          <div class="collapse" id="home-collapse">
-            <ul class="btn-toggle-nav list-unstyled fw-normal small">
-              <li><a href="#privacy" class="link-light rounded">Privacy</a></li>
-              <li><a href="#investment-scams" class="link-light rounded">Investment scams</a></li>
-              <li><a href="#disinfo" class="link-light rounded">Disinformation</a></li>
-              <li><a href="#phishing" class="link-light rounded">Phishing</a></li>
-              <li><a href="#delivery-scams" class="link-light rounded">Delivery scams</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="mb-1">
-          <a href="#" class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
-            data-bs-target="#about-collapse" aria-expanded="false">
-            About
-          </a>
+        
 
-          <div class="collapse show" id="about-collapse">
+        <li class="mb-1">
+          <button class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#kyle-collapse" aria-expanded="true">
+            Kyle Pereira
+          </button>
+
+          <div class="collapse" id="kyle-collapse">
             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-              <li><a href="#cool-tips" class="link-light rounded">Cool tips</a></li>
-              <li><a href="#resources-used" class="link-light rounded">Resources used</a></li>
+              <li><a href="/contact-tracing.html" class="link-light rounded">Contact Tracing</a></li>
+              <li><a href="/rushed-tech.html" class="link-light rounded">Rushed Adoption</a></li>
             </ul>
           </div>
         </li>
         <li class="mb-1">
-          <a href="#" class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
-            data-bs-target="#compliance-collapse" aria-expanded="false">
-            Compliance report
-          </a>
+          <button class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#charlie-collapse" aria-expanded="true">
+            Charlie McMichael
+          </button>
 
-          <div class="collapse show" id="compliance-collapse">
+          <div class="collapse" id="charlie-collapse">
             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-              <li><a href="#cross-browser" class="link-light rounded">Cross browser compatibility</a></li>
-              <li><a href="#hyperlinks" class="link-light rounded">Hyperlinks</a></li>
-              <li><a href="#validity" class="link-light rounded">HTML/CSS Validity</a></li>
+              <li><a href="/PostalScams.html" class="link-light rounded">Postal Scams</a></li>
+              <li><a href="bandwidth.html" class="link-light rounded">Bandwidth</a></li>
             </ul>
           </div>
         </li>
+        
+        <li class="mb-1">
+          <button class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#alastair-collapse" aria-expanded="true">
+            Alastair McNeill
+          </button>
+
+          <div class="collapse" id="alastair-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="/disinfo.html" class="link-light rounded">Disinformation</a></li>
+              <li><a href="/fake-news.html" class="link-light rounded">Fake News</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="mb-1">
+          <button class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#aaron-collapse" aria-expanded="true">
+            Aaron Mclean
+          </button>
+
+          <div class="collapse" id="aaron-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="/investment-scams.html" class="link-light rounded">Investment Scams</a></li>
+              <li><a href="/crypto-scams.html" class="link-light rounded">Cryptocurrency Scams</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="mb-1">
+          <button class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#euan-collapse" aria-expanded="true">
+            Euan Gilmour
+          </button>
+
+          <div class="collapse" id="euan-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="/euan-1.html" class="link-light rounded">Dunno what his</a></li>
+              <li><a href="/euan-2.html" class="link-light rounded">Topics are</a></li>
+            </ul>
+          </div>
+        </li>
+      
       </ul>
     </div>
   </nav>
@@ -90,8 +127,8 @@
       <div class="row">
         <div class="col-lg-9 p-5">
           <h1 class="title" id="article">The Impact of COVID-19 on <u><span class="text-nowrap"
-                style="background-image: url('assets/highlighter.png'); background-repeat: no-repeat; padding: 15px;">Digital
-                Safety</span></u></h1>
+                style="background-image: url('assets/highlighter.png'); background-repeat: no-repeat; padding: 15px;">
+                Fake News / Disinformation</span></u></h1>
         </div>
         <div class="col-lg-auto d-flex align-items-center secondary article-info-container px-5 pb-5">
           <div>
@@ -100,7 +137,7 @@
                 viewBox="0 0 16 16">
                 <path
                   d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1h4s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
-              </svg> Kyle Pereira
+              </svg> Alastair McNeill
             </div>
             <div class="article-info d-flex align-items-center p-1">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -108,7 +145,7 @@
                 <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
                 <path
                   d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-              </svg> October 4, 2021
+              </svg> October 20, 2021
             </div>
           </div>
         </div>
@@ -122,35 +159,72 @@
       <div class="row" style="justify-content: space-around;">
         <div class="col-lg-9">
           <article id="article-text" class="article-body border p-5 shadow">
-            <br>
+            <h2>Disinformation and the infodemic</h4>
+            <p>
+              Infodemic – an excessive amount of information about a problem that is typically unreliable, spreads rapidly and makes a solution more difficult to achieve.
+			  As defined by Oxford Languages, an ‘infodemic’ perfectly captures the current state of disinformation surrounding the coronavirus pandemic.
+			  With the outbreak of covid 19 an outbreak of fake news follows closely, spreading like the virus. This fake news covers all sorts of topics about the coronavirus,
+			  including statistics about cases and transmission, information about the vaccine, the origins of the virus, the politics surrounding the virus and the need for masks. 
+			  If fake information about the coronavirus stops people from following government guidelines, there will be increased risk for the vulnerable people. For herd immunity to be achieved 75-80% of people
+			  will have to be vaccinated, so even if a small percentage of people are convinced to not get the vaccine,
+			  then the number of vaccinated people won’t be high enough to majorly reduce the impact of the pandemic.
+               </p>
+			  <p>Disinformation or ‘fake news’ existed long before Covid 19, It has always influenced our lives, even in way which we might not realise;
+			  through politics, by platforming hate speech, creating distrust in the media and by supporting dangerous conspiracies, some of which have a direct effect on people’s health.
+			  Unfortunately, we have witnessed the severe consequences of these conspiracies recently,
+			  such as when a four-year-old girl died from the coronavirus after she contracted the virus from her anti – vax mother. Another example of the direct impact of disinformation is in Japan,
+			  where immunisation rates for the HPV vaccine fell from 70% to less than 1% in a few months, after disinformation in the media caused a panic about the safety of the vaccine. If this trend continues 
+			  its estimated 9300 – 10800 people will die from cervical cancer in the next 50 years, all of which could have been prevented with the HPV vaccine (Simms,2020). A study of 2622 parents in 
+			  the UK found that 40% of them had seen negative messages about the HPV vaccine on social media (Iacobucci 2019), it’s important to look at how and why fake news is spread. Since the coronavirus
+			  pandemic is still ongoing, we are yet to see the full extent of damage caused by disinformation. Due to the viral nature of the coronavirus the actions of those who don’t follow the guidelines 
+			  will affect everyone. Vulnerable people will get sick and possibly even die because of the misinformed actions of others. 
+			  </p>
+          
             <a class="article-heading" id="privacy"></a>
-            <h4> Coronavirus and the infodemic</h4>
-            <p> Infodemic – an excessive amount of information about a problem that is typically unreliable, spreads rapidly and makes a solution more difficult to achieve. As defined by Oxford Languages, an ‘infodemic’ perfectly captures the current state of disinformation surrounding the coronavirus pandemic. With the outbreak of covid 19 an outbreak of fake news follows closely, spreading like the virus. This fake news covers all sorts of topics about the coronavirus, including statistics about cases and transmission, information about the vaccine, the origins of the virus, the politics surrounding the virus and the need for masks. If fake information about the coronavirus stops people from following government guidelines, there will be increased risk for the vulnerable people. For herd immunity to be achieved 75-80% of people will have to be vaccinated, so even if a small percentage of people are convinced to not get the vaccine, then the number of vaccinated people won’t be high enough to majorly reduce the impact of the pandemic.</p>
-			<p>Disinformation or ‘fake news’ existed long before Covid 19, It has always influenced our lives, even in way which we might not realise; through politics, by platforming hate speech, creating distrust in the media and by supporting dangerous conspiracies, some of which have a direct effect on people’s health. Unfortunately, we have witnessed the severe consequences of these conspiracies recently, such as when a four-year-old girl died from coronavirus after she contracted covid 19 from her anti – vax mother. Another example of the direct impact of disinformation is in Japan, where immunisation rates for the HPV vaccine fell from 70% to less than 1% in a few months, after disinformation in the media caused a panic about the safety of the vaccine. If this trend continues its estimated 9300 – 10800 people will die from cervical cancer in the next 50 years, all of which could have been prevented with the HPV vaccine (Simms,2020). A study of 2622 parents in the UK found that 40% of them had seen negative messages about the HPV vaccine on social media (Iacobucci 2019), it’s important to look at how and why fake news is spread. Since the coronavirus pandemic is still ongoing, we are yet to see the full extent of damage caused by disinformation. Due to the viral nature of the coronavirus the actions of those who don’t follow the guidelines will affect everyone. Vulnerable people will get sick and possibly even die because of the misinformed actions of others. </p>
-			<p>There can be multiple reasons why people create fake news but its usually for commercial or political gain. Someone trying to spread fake news will often start by using bots to spread the information on social media. Once the posts gain some traction on social media people start to propagate the disinformation sharing it to family and friends, most of the time they don’t even know they are spreading fake news. Due to the nature of social media this creates a chain reaction where disinformation can easily get millions of impressions in a short period of time. For example, the conspiracy theory that the coronavirus was a bioweapon developed by China, which was spread on Twitter with over five million impressions: </p>
-			<p> “The co-ordinated efforts to promote the bioweapon conspiracy theory focused on 882 original tweets, which were retweeted 18,498 times and liked 31,783 times, creating an estimated 5 million impressions on Twitter users.” (Graham et al)  </P>
-			<p>These unsupported claims encouraged attitudes of bigotry and hate speech towards Asian communities.</p>
-			<p>Social media platforms are responsible for the content which they allow on their site. Although they cannot be expected to fact check every post, if they consistently allow fake news to have a place on their platform then they should be held responsible. Facebook claims to have removed 20 million posts containing disinformation, yet fake news was clicked six times more than factual news during the 2020 American election (Dwoskin 2021). Until recently last year advertisers on Facebook could target people interested in ‘pseudoscience’. The category was removed after new outlets picked up on it, however this was after Facebook had already promised to remove disinformation about the coronavirus. More than 78 million users were interested in the ‘pseudoscience’ category which raises the question if Facebook were willing to allow fake news on their platform if they could financially benefit from it.</p>
-			<p>There are multiple ways we can protect ourselves from fake news, the easiest and most effective way is common sense. If you see a post on social media, you shouldn’t assume that it is true, you should be sceptical about believing news from anyone who isn’t a trusted source of information. There are now also sometimes fact checkers under social media posts, these trusted people flag disinformation so that the platform you are on can tell you that you are looking at something which isn’t true. A website extension such as health guard can flag websites known to contain false information and give credibility ratings to websites. This has helped during the pandemic as over 400 websites have been flagged containing disinformation about the coronavirus, some of the most common myths were that: The mRNA vaccines can alter human DNA, vaccines have microchip surveillance technology, that the vaccine causes infertility, that the vaccine contains aborted foetus tissue (Crist 2021).</p>
-			<p>The coronavirus pandemic has affected everyone across the world. The infodemic has been enabled by our digital society where the main way to communicate and receive information is online. from a vast number of sources. This means that fake news is both more prevalent and more visible. Every news outlet and social media platform are covering the latest figures and stories about the virus. In this overload of information, it is difficult to evaluate what is true and what isn’t, which gives opportunities to malicious people to create fake news for their own benefit or entertainment. If people believe disinformation, then it has an impact on everyone in our society and risks increasing illness. However, there is a positive development from the increase in awareness of fake news which is that there is that people are more likely to question what they read, and more technology has been developed to detect and highlight disinformation. </p>
-            <br>
+          
           </article>
 
           <div id="site-info" class="article-body border p-5 shadow mt-5">
+            <h2 id="about" class="article-heading">Fake news and the role of social media</h2>
+           
+             <p>There are multiple reasons why people create fake news but its usually for commercial or political gain. Someone trying to spread fake news will often start by using bots to spread 
+			the information on social media. Once the posts gain some traction on social media people start to propagate the disinformation sharing it to family and friends, most of the time they don’t 
+			even know they are spreading fake news. Due to the nature of social media this creates a chain reaction where disinformation can easily get millions of impressions in a short period of time.
+			For example, the conspiracy theory that the coronavirus was a bioweapon developed by China, which was spread on Twitter with over five million impressions: 
+			</p>
+			<p>“The co-ordinated efforts to promote the bioweapon conspiracy theory focused on 882 original tweets, which were retweeted 18,498 times and liked 31,783 times, creating an estimated 5 million impressions on Twitter users.” (Graham et al) 
+			</p>
+			<p>These unsupported claims encouraged attitudes of bigotry and hate speech towards Asian communities.</p>
+			<p>Social media platforms are responsible for the content which they allow on their site. Although they cannot be expected to fact check every post, if they consistently allow fake news to have a place on their platform then they should be held responsible. Facebook claims to have removed 20 million posts containing disinformation, yet fake news was clicked six times more than factual news during the 2020 American election (Dwoskin 2021). Until recently last year advertisers on Facebook could target people interested in ‘pseudoscience’. The category was removed after new outlets picked up on it, however this was after Facebook had already promised to remove disinformation about the coronavirus. More than 78 million users were interested in the ‘pseudoscience’ category which raises the question if Facebook were willing to allow fake news on their platform if they could financially benefit from it.
+			</p>
+            <p>
+              There are multiple ways we can protect ourselves from fake news, the easiest and most effective way is common sense. If you see a post on social media, you shouldn’t assume that it is true, you should be sceptical about believing news from anyone who isn’t a trusted source of information. There are now also sometimes fact checkers under social media posts,
+			  these trusted people flag disinformation so that the platform you are on can tell you that you are looking at something which isn’t true.
+			  A website extension such as health guard can flag websites known to contain false information and give credibility ratings to websites. 
+			  This has helped during the pandemic as over 400 websites have been flagged containing disinformation about the coronavirus, some of the most common myths were that: 
+			  The mRNA vaccines can alter human DNA, vaccines have microchip surveillance technology, that the vaccine causes infertility, that the vaccine contains aborted foetus tissue (Crist 2021).
+            </p>
             
-            <h4 id="cool-tips" class="article-heading">
-              
-              
-               
-            
+           
 
 
-            
+          
           </div>
 
           <div id="compliance-report" class="article-body border p-5 shadow mt-5">
+            <h2 id="report">The effect of the coronavirus and disinformation on society</h2>
             
-              
+            <p>
+			The coronavirus pandemic has affected everyone across the world. The infodemic has been enabled by our digital society where the main way to communicate and receive information is online,
+			from a vast number of sources. This means that fake news is both more prevalent and more visible. Every news outlet and social media platform are covering the latest figures and stories about 
+			the virus. In this overload of information, it is difficult to evaluate what is true and what isn’t, this gives opportunities to malicious people to create fake news for their own benefit or 
+			entertainment. If people believe disinformation, then it has an impact on everyone in our society and risks increasing illness. However, there is a positive development from the increase in awareness
+			of fake news which is that there is that people
+			are more likely to question what they read, and more technology has been developed to detect and highlight disinformation. 
+        
+              </p>
+                 
+           
           </div>
         </div>
 
@@ -163,44 +237,73 @@
                   Article
                 </button>
                 <progress max="100" value="0" id="article-progress" class="mx-auto progress"></progress>
+              </li>
 
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#kyle-collapse-side" aria-expanded="true">
+                  Kyle Pereira
+                </button>
 
-                <div class="collapse show" id="home-collapse-side">
+                <div class="collapse show" id="kyle-collapse-side">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#privacy" class="link-dark rounded">Privacy</a></li>
-                    <li><a href="#investment-scams" class="link-dark rounded">Investment scams</a></li>
-                    <li><a href="#disinfo" class="link-dark rounded">Disinformation</a></li>
-                    <li><a href="#phishing" class="link-dark rounded">Phishing</a></li>
-                    <li><a href="#delivery-scams" class="link-dark rounded">Delivery scams</a></li>
+                    <li><a href="/contact-tracing.html" class="link-dark rounded">Contact Tracing</a></li>
+                    <li><a href="/rushed-tech.html" class="link-dark rounded">Rushed Adoption</a></li>
                   </ul>
                 </div>
               </li>
               <li class="mb-1">
                 <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                  data-bs-target="#about-collapse-side" aria-expanded="true">
-                  About
+                  data-bs-target="#charlie-collapse-side" aria-expanded="true">
+                  Charlie McMichael
                 </button>
-                <progress max="100" value="0" id="about-progress" class="mx-auto progress"></progress>
 
-                <div class="collapse show" id="about-collapse-side">
+                <div class="collapse show" id="charlie-collapse-side">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#cool-tips" class="link-dark rounded">Cool tips</a></li>
-                    <li><a href="#resources-used" class="link-dark rounded">Resources used</a></li>
+                    <li><a href="/PostalScams.html" class="link-dark rounded">Postal Scams</a></li>
+                    <li><a href="/bandwidth.html" class="link-dark rounded">Bandwidth</a></li>
                   </ul>
                 </div>
               </li>
+              
               <li class="mb-1">
                 <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                  data-bs-target="#compliance-collapse-side" aria-expanded="true">
-                  Web compliance
+                  data-bs-target="#alastair-collapse-side" aria-expanded="true">
+                  Alastair McNeill
                 </button>
-                <progress max="100" value="0" id="compliance-progress" class="mx-auto progress"></progress>
 
-                <div class="collapse show" id="compliance-collapse-side">
+                <div class="collapse show" id="alastair-collapse-side">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#cross-browser" class="link-dark rounded">Cross browser compatibility</a></li>
-                    <li><a href="#hyperlinks" class="link-dark rounded">Hyperlinks</a></li>
-                    <li><a href="#validity" class="link-dark rounded">HTML/CSS validity</a></li>
+                    <li><a href="/disinfo.html" class="link-dark rounded">Disinformation</a></li>
+                    <li><a href="/fake-news.html" class="link-dark rounded">Fake News</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#aaron-collapse-side" aria-expanded="true">
+                  Aaron Mclean
+                </button>
+
+                <div class="collapse show" id="aaron-collapse-side">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="/investment-scams.html" class="link-dark rounded">Investment Scams</a></li>
+                    <li><a href="/crypto-scams.html" class="link-dark rounded">Cryptocurrency Scams</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#euan-collapse-side" aria-expanded="true">
+                  Euan Gilmour
+                </button>
+
+                <div class="collapse show" id="euan-collapse-side">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="/euan-1.html" class="link-dark rounded">Dunno what his</a></li>
+                    <li><a href="/euan-2.html" class="link-dark rounded">Topics are</a></li>
                   </ul>
                 </div>
               </li>
@@ -215,7 +318,7 @@
   <div class="container mt-5">
     <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
       <p>
-        <span class="text-muted">&copy; 2021 Kyle Pereira. Created for CS101.</span>
+        <span class="text-muted">&copy; . Created for CS101.</span>
       </p>
 
     </footer>
