@@ -1,0 +1,426 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="main.css">
+
+  <title>COVID-19 & Digital Safety</title>
+
+</head>
+
+<body>
+  <script src="main.js"></script>
+
+  <nav class="container shadow navbar navbar-dark bg-dark navbar-expand-lg fixed-top ">
+    <a href="#" class="navbar-brand d-flex align-items-center" style="gap: 10px">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#fff">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
+      </svg>
+      CS101
+    </a>
+    <div id="nav-status-item" class="secondary ms-sm-4 d-none d-sm-block">
+      Impact of COVID-19 on Digital Safety
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"><span
+        class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="nav-menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="biblio.html">Bibliography</a></li>
+      </ul>
+
+      <ul class="d-lg-none navbar-nav text-light list-unstyled ps-0 border-top mt-3 pt-3">
+        
+
+        <li class="mb-1">
+          <button class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#kyle-collapse" aria-expanded="true">
+            Kyle Pereira
+          </button>
+
+          <div class="collapse" id="kyle-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="contact-tracing.html" class="link-light rounded">Contact Tracing</a></li>
+              <li><a href="rushed-tech.html" class="link-light rounded">Rushed Adoption</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#charlie-collapse" aria-expanded="true">
+            Charlie McMichael
+          </button>
+
+          <div class="collapse" id="charlie-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="PostalScams.html" class="link-light rounded">Postal Scams</a></li>
+              <li><a href="bandwidth.html" class="link-light rounded">Bandwidth</a></li>
+            </ul>
+          </div>
+        </li>
+        
+        <li class="mb-1">
+          <button class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#alastair-collapse" aria-expanded="true">
+            Alastair McNeill
+          </button>
+
+          <div class="collapse" id="alastair-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="disinfo.html" class="link-light rounded">Disinformation</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="mb-1">
+          <button class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#aaron-collapse" aria-expanded="true">
+            Aaron Mclean
+          </button>
+
+          <div class="collapse" id="aaron-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="InvScams.html" class="link-light rounded">Investment Scams</a></li>
+              <li><a href="cryptoScams.html" class="link-light rounded">Cryptocurrency Scams</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="mb-1">
+          <button class="nav-item nav-link btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#euan-collapse" aria-expanded="true">
+            Euan Gilmour
+          </button>
+
+          <div class="collapse" id="euan-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="phishing.html" class="link-light rounded">Phishing</a></li>
+              
+            </ul>
+          </div>
+        </li>
+      
+      </ul>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container border shadow">
+      <div class="row">
+        <div class="col-lg-9 p-5">
+          <h1 class="title" id="article">The Impact of COVID-19 on <u><span class="text-nowrap"
+                style="background-image: url('assets/highlighter.png'); background-repeat: no-repeat; padding: 15px;">Digital
+                Safety</span></u></h1>
+        </div>
+        <div class="col-lg-auto d-flex align-items-center secondary article-info-container px-5 pb-5">
+          <div>
+            <div class="article-info d-flex align-items-center p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1h4s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+              </svg> 
+            </div>
+            <div class="article-info d-flex align-items-center p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-calendar-event" viewBox="0 0 16 16">
+                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                <path
+                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+              </svg> October 5, 2021
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <img src="assets/coronavirus.webp" alt="covid-19 splash image" class="header-image p-0">
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row" style="justify-content: space-around;">
+        <div class="col-lg-9">
+          <article id="article-text" class="article-body border p-5 shadow">
+            <p>
+              With the outbreak of COVID-19 there has been a sharp rise in digital threats online. Malicious agents are
+              taking
+              advantage of the situation by using the pandemic for their own benefit. There are multiple means they
+              utilise,
+              such
+              as scams, disinformation and phishing. The best way to protect yourself from these attacks is by being
+              informed on
+              what they are and knowing how to avoid them. As a lot of people are now working from home, there are a
+              record
+              number of people using online services such as zoom. When online you must be aware of your data and
+              privacy,
+              services aren’t always secure, and your data could have been involved in a data breach.
+              The areas we will be investigating are as follows:
+            </p>
+            <br>
+            <a class="article-heading" id="privacy"></a>
+            <h4> Kyle Pereira – COVID 19 & Privacy</h4>
+            <p>
+              As technology evolves to deal with and work around the COVID-19 pandemic, it is ever important to
+              scrutinize their impact on our ever-dwindling privacy.
+              Contact tracing is a prime example of a technology that could be misused in a way which would reduce
+              privacy. RAND Corporation finds that “there is considerable variance across programs” in their privacy
+              analysis which charted 20 criteria across 40 programs in 20 countries.
+              There are concerns that surveillance technology is being rolled out under the guise of COVID-19
+              prevention. In Abu Dhabi, facial scanners meant to detect COVID-19 were deployed at border crossings,
+              malls and other public locations have made data rights groups worried.
+              Rushed adoption of new and existing technologies due to the pandemic is also a concern. One example
+              is Zoom, which experienced a massive boost in popularity over the pandemic but has many privacy
+              concerns. </p>
+            <br>
+            <a class="article-heading" id="investment-scams"></a>
+            <h4>Aaron Mclean – COVID-19 & “Investment Scams”</h4>
+            <p>
+              As the COVID-19 pandemic has had and still is having great effect on many aspects of our world, not
+              least of which is the economy, which has seen moderate to severe decline in the past year. This has led
+              to a large increase in investment scams. Investment scams are when people, through various methods,
+              exploit people investing their money by either making think they are investing when they are just taking
+              their money, or tricking them into investing into things that benefit the scammer.
+              Investment scams mostly affect those who are less experienced with investing who can’t tell when
+              something is fake or when it’s too good to be true. They can be done via fake websites, social media
+              posts etc.
+              They can be Avoided by making sure websites are secure via padlocks, don’t have spelling mistakes, the
+              contact page is accurate, etc. Also, one of the best ways is common sense, the rule if it’s too good to be
+              true, it probably is, is a good one to follow
+            </p>
+            <br>
+            <a class="article-heading" id="disinfo"></a>
+            <h4>Alastair McNeill – Disinformation / “Fake News”</h4>
+            <p>
+              Disinformation or “fake news” has a massive effect on our lives, it influences political beliefs, can
+              platform harmful hate speech and lead to a distrust in the media. There can be multiple reasons why
+              people originally share disinformation but it’s usually for political or commercial gain. Someone trying
+              to
+              create a fake narrative will often start promoting fake information by using bots. Once bots start to
+              spread fake information people share the information on social media without thinking – continuing the
+              spread of disinformation like a virus. Disinformation and fake news have existed long before COVID-19
+              however during the pandemic the severity and consequence of the fake news has drastically increased.
+              Fake news surrounding vaccines have had a direct effect on people’s health, such as the four-year-old
+              girl who died from the coronavirus after her anti – vax mother contracted the virus. Conspiracies like
+              anti vax gain their platform from fake news shared on social media, another example of this is the idea
+              that China engineered the corona virus as a bioweapon which had over five million impressions on
+              twitter from fake tweets.
+              There are multiple ways in which you can protect yourself from fake information, a website extension
+              such as health guard can flag websites known to contain false information. You should also keep an eye
+              out on social media for posts which have been flagged by fact checkers to be false and generally be wary
+              about information that you see on social media.</p>
+            <br>
+            <a class="article-heading" id="phishing"></a>
+            <h4>Euan Gilmour - COVID-19 & Phishing</h4>
+            <p>
+              Coronavirus-related email phishing attacks saw a 600% increase in the first quarter of 2020. This kind of
+              attack is particularly lucrative for scammers, as they have a success rate of 30% or higher, and only a
+              small percentage of clicks are required to make financial gain. Thus, millions of emails were sent to
+              victims of seeking to apply for funding relief provided by the government, their employers, banks, etc,
+              often using coronavirus, or COVID-19 in the title to entice people. By referring to case studies of mass
+              phishing over the course of the pandemic, I will analyse both the significant prevalence of this type of
+              attack, and the increased sophistication of the methods used; as well as providing a guide as to how to
+              avoid this type of scam.</p>
+            <br>
+            <a class="article-heading" id="delivery-scams"></a>
+            <h4>
+              Charlie McMichael – COVID 19 and staying home</h4>
+            <p>
+              Due to everyone being in lockdown the number of delivers to people’s homes skyrocketed as it
+              was there only means of getting products, this resulted in scammers trying to take advantage of
+              the situation by sending people text messages about delivery issue’s etc. I will be Creating a
+              guide/informative page on what delivery scams are, what are the key indicators of the scam
+              and how to notice them and how to try and prevent getting them/ how to report them. due of
+              all the people having to spend time online for work, school, or entertainment it has caused a
+              massive increase in internet traffic with some providers stating an increase of 60%, this resulted
+              in many people experience bandwidth issues and greatly increased the risk of a successfully
+              DDOS attack. Or resulted in many services having to reduce their overall quality like Netflix. As a
+              individual there isn’t much risk of a DDOS attack but if you’re a small or large business owner
+              you never know when someone might just come after your bandwidth</p>
+          </article>
+
+          <div id="site-info" class="article-body border p-5 shadow mt-5">
+            <h2 id="about" class="article-heading">Site information</h2>
+            <p class="mt-4">
+              This site was built with love & tears using <a href="https://getbootstrap.com"> Bootstrap v5.1</a>. I have
+              used pure HTML/CSS
+              before and wanted to learn something new.
+            </p>
+            <h4 id="cool-tips" class="article-heading">
+              Cool tips:
+            </h4>
+            <ul>
+              <li>This site is fully responsive on all screen sizes and can be freely resized. Shown below are phone and
+                desktop screenshots.
+                <div class="row mt-4">
+                  <img class="col-md-4 mb-3" style="max-height: 250px; object-fit: contain;"
+                    src="assets/phone-screenshot.png" alt="Screenshot taken on a phone" />
+                  <img class="col-md-8" style="object-fit: contain;" src="assets/desktop-screenshot.png"
+                    alt="Screenshot taken on a desktop" />
+                </div>
+              </li>
+              <li class="mt-4">
+                This site is JS powered!
+              </li>
+              <li>
+                Did I mention Bootstrap v5.1? <br>...I've run out of things to say, sorry.
+              </li>
+            </ul>
+
+
+            <h4 id="resources-used" class="article-heading">Resources</h4>
+            <div>
+              <ul>
+                <li><a href="https://getbootstrap.com/docs/5.1/">Bootstrap documentation</a></li>
+                <li><a href="https://getbootstrap.com/docs/5.1/examples/">Inspiration drawn from Bootstrap examples</a>
+                </li>
+                <li><a href="https://icons.getbootstrap.com/">Icons from Bootstrap Icon Library</a></li>
+                <li><a href="https://pixabay.com/photos/coronavirus-corona-virus-pandemic-4972480/">Banner image from
+                    Pixabay</a></li>
+                <li><a href="https://fonts.google.com/">Libre Baskerville and DM Serif Display from Google Fonts</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="compliance-report" class="article-body border p-5 shadow mt-5">
+            <h2 id="report">Web compliance report</h2>
+            <h4 id="cross-browser" class="article-heading">Cross browser compatibility</h4>
+            <p>
+              The site was tested with Chromium 94.0 and Firefox 93.0. The site appears and functions identically
+              between the browsers. (The benefits of using modern versions, I suppose!)
+            </p>
+            <h4 id="hyperlinks" class="article-heading">Hyperlinks</h4>
+            <p>All the hyperlinks work fine. I had to set the CSS property <code>scroll-margin-top</code>
+              to make sure the navbar didn't cover the heading though.</p>  
+            <h4 id="validity" class="article-heading">HTML/CSS Validity</h4>
+            <p class="mt-4">
+              The W3C <a href="https://validator.w3.org">HTML</a> and <a
+                href="https://jigsaw.w3.org/css-validator/validator">CSS</a> validator tools were used to validate that
+              this page is made of valid HTML and CSS! :)
+            </p>
+            <p>
+              <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+                  alt="Valid CSS!" />
+              </a>
+              <img src="assets/no-badge-html.png" style="max-width:100%" alt="Valid HTML!" />
+            </p>
+            <p>Sadly it seems they've scrapped the HTML verification badge for HTML5, so that screenshot is all I have..
+            </p>
+          </div>
+        </div>
+
+        <aside class="col-lg-3 d-none d-lg-block">
+          <nav class="navbar border shadow p-3" style="position: sticky;">
+            <ul class="navbar-nav list-unstyled" style="width: 100%;">
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#home-collapse-side" aria-expanded="true">
+                  Article
+                </button>
+                <progress max="100" value="0" id="article-progress" class="mx-auto progress"></progress>
+              </li>
+
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#kyle-collapse-side" aria-expanded="true">
+                  Kyle Pereira
+                </button>
+
+                <div class="collapse show" id="kyle-collapse-side">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="contact-tracing.html" class="link-dark rounded">Contact Tracing</a></li>
+                    <li><a href="rushed-tech.html" class="link-dark rounded">Rushed Adoption</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#charlie-collapse-side" aria-expanded="true">
+                  Charlie McMichael
+                </button>
+
+                <div class="collapse show" id="charlie-collapse-side">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="PostalScams.html" class="link-dark rounded">Postal Scams</a></li>
+                    <li><a href="bandwidth.html" class="link-dark rounded">Bandwidth</a></li>
+                  </ul>
+                </div>
+              </li>
+              
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#alastair-collapse-side" aria-expanded="true">
+                  Alastair McNeill
+                </button>
+
+                <div class="collapse show" id="alastair-collapse-side">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="disinfo.html" class="link-dark rounded">Disinformation</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#aaron-collapse-side" aria-expanded="true">
+                  Aaron Mclean
+                </button>
+
+                <div class="collapse show" id="aaron-collapse-side">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="InvScams.html" class="link-dark rounded">Investment Scams</a></li>
+                    <li><a href="cryptoScams.html" class="link-dark rounded">Cryptocurrency Scams</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#euan-collapse-side" aria-expanded="true">
+                  Euan Gilmour
+                </button>
+
+                <div class="collapse show" id="euan-collapse-side">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="phishing.html" class="link-dark rounded">Phishing</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="container mt-5">
+    <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+      <p>
+        <span class="text-muted">&copy; Created for CS101.</span>
+      </p>
+
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+
+
