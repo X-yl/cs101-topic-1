@@ -154,3 +154,7 @@ progress::-moz-progress-bar {
 progress::-webkit-progress-value {
   background: blue;
 }
+
+.csl-entry {
+  scroll-margin-top: 80px;
+}
